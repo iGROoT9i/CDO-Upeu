@@ -1,5 +1,7 @@
-
-.cccccc h3{
+.cccccc h2{
     color: white;
     z-index: 1000;
+}
+.header-top{
+    background: #992e45
 }

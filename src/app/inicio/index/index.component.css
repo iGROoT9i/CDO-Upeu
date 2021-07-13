@@ -135,11 +135,11 @@
   text-align: right;
 }
 
-.features-title{
-    color: rgba(168, 26, 26, 0.8);
+.features-title,.title{
+    color: #992e45;
 }
-.features-title span{
-  color:rgba(192, 182, 38, 0.8)
+.features-title span,.date{
+  color:#97992e
 }
 .features-image{
   margin-top: -1px;

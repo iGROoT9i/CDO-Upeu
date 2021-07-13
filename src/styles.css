@@ -12,7 +12,7 @@ body {
     background-size: cover;
   }
   .et-hero-tabs{
-    margin-top: 8.7vh;
+    margin-top: 10vh;
   }
   .et-hero-tabs,
   .et-slide {
@@ -35,7 +35,7 @@ body {
     font-size: 2rem;
     margin: 0;
     letter-spacing: 1rem;
-    color: rgba(168, 26, 26, 0.8);
+    color: #992e45;
   }
   .et-hero-tabs h3,
   .et-slide h3 {
@@ -72,7 +72,7 @@ body {
   }
   .et-hero-tab:hover {
     color: white;
-    background: rgba(168, 26, 26, 0.8);
+    background: #992e45;
     transition: all 0.5s ease;
   }
   

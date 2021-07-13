@@ -1,0 +1,39 @@
+.courses-sidebar{
+position: fixed;
+margin-left: -30px;
+
+}
+.sidebar-header{
+    padding-top: 17px;
+    
+}
+
+.sidebar-header .user-pic {
+
+   float: left;
+   width: 60px;
+   padding: 2px;
+   border-radius: 12px;
+   margin-right: 15px;
+   overflow: hidden;
+}
+.boton-d{
+    text-align: center;
+}
+.boton-d a{
+    width: 100%;
+    color: #992e45;
+    padding: 10px 5px;
+    border: 1px solid #992e45;
+}
+.sidebar-title h4{
+    color: #992e45;
+}
+.boton-d a:hover{
+    background: #992e45;
+    color: white;
+}
+.category-items li{
+    margin: 0;
+    padding: 5px;
+}
