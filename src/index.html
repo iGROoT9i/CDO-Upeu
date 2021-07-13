@@ -1,13 +1,118 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Cdo</title>
+  <!-- Title -->
+  <title>CDO | UPeU</title>
   <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="keywords" content="airbnb, booking, city guide, directory, events, hotel booking, listings, marketing, places, restaurant, restaurant">
+  <meta name="description" content="Guido - Directory & Listing HTML Template">
+  <!-- css file -->
+ 
+  <link rel="stylesheet" href="styles.css">
+
+   <!--====== Favicon Icon ======-->
+   <link rel="shortcut icon" href="assets/img/logo_upeu22.ico" type="image/png">
+    
+        
+   <!-- CSS
+   ============================================ -->
+
+   <!--===== Vendor CSS (Bootstrap & Icon Font) =====-->
+
+   <!-- <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+   <link rel="stylesheet" href="assets/css/plugins/default.css"> -->
+
+
+   <!--===== Plugins CSS (All Plugins Files) =====-->
+   <!-- <link rel="stylesheet" href="assets/css/plugins/animate.css">
+   <link rel="stylesheet" href="assets/css/plugins/slick.css">
+   <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css"> -->
+
+   <!--====== Main Style CSS ======-->
+   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+
+   <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+   <link rel="stylesheet" href="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/css/vendor/plugins.min.css">
+   <link rel="stylesheet" href="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/css/style.min.css">
+ 
+ 
 </head>
 <body>
   <app-root></app-root>
+  <script src="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/js/vendor/jquery-3.5.1.min.js"></script>
+  <script>
+    class StickyNavigation {
+	
+	constructor() {
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$('.et-hero-tab').click(function() { 
+			self.onTabClick(event, $(this)); 
+		});
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
+	
+
+	
+	onScroll() {
+		this.checkTabContainerPosition();
+
+	}
+	
+	
+	checkTabContainerPosition() {
+		let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
+		if($(window).scrollTop() > offset) {
+			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
+		} 
+		else {
+			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
+		}
+	}
+	
+
+}
+
+new StickyNavigation();
+  </script>
+  <script src="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  
+  <!--====== All Plugins js ======-->
+  <!-- <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/slick.min.js"></script>
+  <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/plugins/jquery.appear.min.js"></script>
+  <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+  <script src="assets/js/plugins/wow.min.js"></script>
+  <script src="assets/js/plugins/ajax-contact.js"></script> -->
+  
+
+  <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+  <script src="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/js/plugin.min.js"></script>
+
+  
+  <!--====== Main Activation  js ======-->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <script src="assets/js/scroll.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="inicio/home#"]');
+  </script>
+
 </body>
 </html>
