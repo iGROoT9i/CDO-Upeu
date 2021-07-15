@@ -22,15 +22,22 @@
                     <h4 class="title dfffff">Ingresa con tu cuenta</h4>
 
                     <div class="login-register-form">
-                        <form action="#">
+                        <form (ngSubmit)="entrar()">
                             <div class="single-form">
                                 <label>Correo Electronico *</label>
-                                <input type="email">
+                                <input type="email" name="email" id="email" [(ngModel)]="email">
                             </div>
                             <div class="single-form">
                                 <label>Contraseña</label>
-                                <input type="password">
+                                <input type="password"  name="password" id="password" [(ngModel)]="password">
                             </div>
+                            <div class="alert" *ngIf="email">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    Datos incorrectos!!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
+                            </div>
+                           
                             <div class="single-form">
                                 <button class="main-btn btn-block">Iniciar Sesion</button>
                             </div>

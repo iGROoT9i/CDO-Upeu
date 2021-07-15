@@ -1,7 +1,38 @@
-.cccccc h2{
-    color: white;
-    z-index: 1000;
+.cccccc{
+    padding: 0;
+    margin: 0;
+}
+.cccccc img{
+    width: 45vh;
+    font-style: inherit;
+    color: #992e45;
+   
+    
 }
 .header-top{
-    background: #992e45
+    background: #ffffff;
+    padding-bottom: 1vh;
+    border-bottom: 2px rgba(109, 109, 109, 0.432) solid;
+    box-shadow: 5px 10px 10px rgba(100, 100, 100, 0.459);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

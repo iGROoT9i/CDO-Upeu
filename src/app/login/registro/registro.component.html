@@ -15,37 +15,49 @@
             <div class="col-lg-6">
                 <div class="login-register-content">
                     <h4 class="title dfffff">Crear una nueva cuenta</h4>
-
+ 
                     <div class="login-register-form">
-                        <form action="#">
+                        <form (ngSubmit)="addTask(name,lastname,dni,email,password,passwordc)">
                             <div class="single-form">
                                 <label>Nombre completo *</label>
-                                <input type="text">
+                                <input type="text" name="name" #name>
                             </div>
                             <div class="single-form">
                                 <label>Apellidos *</label>
-                                <input type="text">
+                                <input type="text" name="lastname" #lastname >
                             </div>
                             <div class="single-form">
                                 <label>correo Electronico *</label>
-                                <input type="email">
+                                <input type="email" name="email" #email>
                             </div>
                             <div class="single-form">
                                 <label>DNI *</label>
-                                <input type="number">
+                                <input type="text" name="dni" #dni>
                             </div>
                             <div class="single-form">
                                 <label>Contraseña</label>
-                                <input type="password">
+                                <input type="password" name="password" #password >
                             </div>
                             <div class="single-form">
                                 <label>Confirmar Contraseña</label>
-                                <input type="password">
+                                <input type="password" name="passwordc" #passwordc>
                             </div>
                             <div class="single-form">
                                 <div class="checkbox">
                                   
                                 </div>
+                            </div>
+                            <div class="alert" *ngIf="alert">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    contraseñas no coinciden!!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
+                            </div>
+                            <div class="alert" *ngIf="alert2">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    Completa todos lo campos de registro!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
                             </div>
                             <div class="single-form">
                                 <button class="main-btn btn-block">Registrar</button>
@@ -56,6 +68,8 @@
                                 <a routerLink="/login/ingresar" class="main-btn main-btn-2 btn-block">Inicia Sesión</a>
                             </div>
                         </form>
+
+                     
                     </div>
                 </div>
             </div>

@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  user= localStorage.getItem("usuario");
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
+  
 
 }

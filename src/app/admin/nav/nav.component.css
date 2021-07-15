@@ -1,6 +1,7 @@
 .courses-sidebar{
 position: fixed;
-margin-left: -30px;
+
+width: 20%;
 
 }
 .sidebar-header{
@@ -36,4 +37,8 @@ margin-left: -30px;
 .category-items li{
     margin: 0;
     padding: 5px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
 }

@@ -699,7 +699,7 @@ p {
 }
 .header-top-wrapper .header-top-left .header-meta li a {
   font-family: Exo;
-  font-weight: 400;
+ 
   font-size: 13px;
   color: #fff;
   -webkit-transition: all 0.3s linear;
@@ -725,8 +725,8 @@ p {
 .header-top-wrapper .header-top-right .header-link a {
   font-family: Exo;
   font-weight: 400;
-  font-size: 13px;
-  color: #d5e97f;
+  font-size: 18px; 
+  color: #808080;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -1534,20 +1534,7 @@ p {
     font-size: 20px;
   }
 }
-.features-mask .features-mask-content p::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  width: 15px;
-  height: 1px;
-  background-color: #fff;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+
 .features-area-2 {
   padding-top: 160px;
 }
@@ -5235,7 +5222,7 @@ p {
 .footer-copyright {
   background-color: #992e45;
   color: white;
-  position: relative;
+  position: block;
   z-index: 1;
 }
 .footer-copyright .copyright {

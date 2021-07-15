@@ -6,6 +6,10 @@ import { AdminComponent } from './admin.component';
 import { NavComponent } from './nav/nav.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventosComponent } from './eventos/eventos.component';
+import { ArchivosComponent } from './archivos/archivos.component';
+import { InvitacionesComponent } from './invitaciones/invitaciones.component';
+import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
 
 
 @NgModule({
@@ -13,7 +17,11 @@ import { FooterComponent } from './footer/footer.component';
     AdminComponent,
     NavComponent,
     PerfilComponent,
-    FooterComponent
+    FooterComponent,
+    EventosComponent,
+    ArchivosComponent,
+    InvitacionesComponent,
+    EvaluacionesComponent
   ],
   imports: [
     CommonModule,

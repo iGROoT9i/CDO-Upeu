@@ -1,6 +1,6 @@
- <!--====== Teacher Details Start ======-->
+<!--====== Teacher Details Start ======-->
 
- <section class="teacher-details">
+<section class="teacher-details">
     <div class="container adasd">
         <div class="row teachers-row justify-content-center">
             <div class="col-lg-5 col-md-6 col-sm-8 teachers-col">
@@ -14,18 +14,49 @@
                         </ul>
                     </div>
                     <div class="teacher-image">
-                            <a href="teacher-details.html">
-                            <img src="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/images/teachers/teacher-2.jpg" alt="teacher">
+                        <a href="teacher-details.html">
+                            <img src="../../../assets/img/perfil.png" alt="teacher">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 teachers-col">
                 <div class="teacher-details-content mt-45">
-                    <h4 class="teacher-name">Zesica Luice</h4>
+                    <h4 class="teacher-name">{{nombre}} <br> {{apellido}}</h4>
+
+                    <form class="mt-5" (submit)="actualizar">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">{{nombre}}</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">{{apellido}}</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">{{email}}</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">{{dni}}</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">*********</label>
+                          </div>
+                          <div class="single-form">
+                            <button class="main-btn btn-block">Registrar</button>
+                        </div>
+                    </form>
+
+
+
                     <span class="designation">Assistant Professor</span>
                     <span class="department">Department of Business Administration</span>
-                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents</p>
+                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need These cases are
+                        perfectly simple and easy to distinguish. In a free hour, when our power of choice is
+                        untrammelled and when nothing prevents</p>
                     <ul class="teacher-contact">
                         <li><strong>Email:</strong> <a href="#">mailme@example.com</a></li>
                         <li><strong>Phone:</strong> <a href="#">+98745 325 698</a></li>
@@ -35,7 +66,8 @@
             </div>
         </div>
 
-        <div class="teacher-details-tab">
+        <!-- TABSSSSS
+            <div class="teacher-details-tab">
             <ul class="nav nav-justified" role="tablist">
                 <li class="nav-item"><a class="active" data-toggle="tab" href="#experience" role="tab">Experience</a></li>
                 <li class="nav-item"><a data-toggle="tab" href="#educational" role="tab">Educational Qualification</a></li>
@@ -162,5 +194,6 @@
                 </div>
             </div> 
         </div>
+        -->
     </div>
 </section>

@@ -1,0 +1,28 @@
+.adasd{
+    padding: 30px 50px;
+    background-color: rgba(255, 255, 255, 0.836);
+    margin-top: 50px;
+}
+
+.title{
+    color: #992e45;
+}
+.flexz{
+    display: flex;
+    justify-content: space-around
+}
+.flexz a{
+ 
+    font-size: 25px;
+
+}
+.btn{
+    border:1px solid #992e45;
+    border-radius: 0;
+    background: white;
+    color: #992e45;
+}
+.btn:hover{
+    background: #992e45;
+    color: white;
+}

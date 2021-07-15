@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventosComponent } from './eventos/eventos.component';
+import { ArchivosComponent } from './archivos/archivos.component';
+import { InvitacionesComponent } from './invitaciones/invitaciones.component';
+import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
 
 const routes: Routes = [
   { path: '', component: AdminComponent ,
@@ -18,8 +22,28 @@ const routes: Routes = [
       
     },
     {
+      path: 'legajos',
+      component: EventosComponent,
+      
+    },
+    {
+      path: 'archivos',
+      component: ArchivosComponent,
+      
+    },
+    {
+      path: 'invitaciones',
+      component: InvitacionesComponent,
+      
+    },
+    {
+      path: 'evaluaciones',
+      component: EvaluacionesComponent,
+      
+    },
+    {
       path: '**',
-      redirectTo: ''
+      redirectTo: 'perfil'
     }
    
   ]

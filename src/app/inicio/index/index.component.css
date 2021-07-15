@@ -144,3 +144,21 @@
 .features-image{
   margin-top: -1px;
 }
+
+
+#plantillas{
+  padding-top: 15vh;
+}
+
+
+
+
+
+
+
+#styll{
+  border-bottom: 2px rgba(109, 109, 109, 0.432) solid;
+    box-shadow: 5px 10px 10px rgba(100, 100, 100, 0.459);
+    transition: 1s;
+}
+
