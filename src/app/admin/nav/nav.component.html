@@ -1,65 +1,69 @@
-
-    <div class="courses-sidebar pt-20">
-        <div class="courses-sidebar-category mt-30">
-            <div class="sidebar-title">
-                <h4 class="title">Dasdboaard</h4>
-            </div>
-
-
-
-            <div class="sidebar-header">
-                <div class="user-pic">
-                    <img class="img-responsive img-rounded"
-                        src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
-                        alt="User picture">
-                </div>
-
-                <div class="user-info">
-                    <span class="user-name">
-                        <strong>{{user}}</strong>
-                    </span>
-                    <span class="user-role">Administrator</span>
-                    <span class="user-status">
-                        <i class="fa fa-circle"></i>
-                        <span>Online</span>
-                    </span>
-                </div>
-            </div>
-
-            <ul class="category-items">
-               
-                <li class="boton-d">
-                    <a   routerLink="/admin/perfil" >Editar Perfil</a>
-
-                </li>
-                <br>
-                <li>
-                    <div class="form-radio">
-                        <label for="categoryRadio1"> <span></span> General </label>
-                    </div>
-                </li>
-                
-                <li class="boton-d">
-                    <a   routerLink="legajos" >Legajos</a>
-                </li>
-                
-                <li class="boton-d">
-                    <a   routerLink="invitaciones" >Invitaciones</a>
-                </li>
-
-                <li class="boton-d">
-                    <a   routerLink="evaluaciones" >Evaluaciones</a>
-                </li>
-                
-                <li class="boton-d">
-                    <a   routerLink="" >Administrar pagina</a>
-                </li>
-               
-            </ul>
+<div class="courses-sidebar mt-10">
+    <div class="courses-sidebar-category ">
+        <div class="sidebar-title">
+            <h4 class="title">Dashboard</h4>
+            <button (click)="salir()" class="btn btn-dark"> <i class="fas fa-sign-out-alt"></i></button>
         </div>
 
+        
 
-        <!-- noticie implemetacion a futuro --------------------------------------------
+        <div class="sidebar-header">
+            <div class="user-pic">
+                <img class="img-responsive img-rounded"
+                    src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                    alt="User picture">
+            </div>
+
+            <div class="user-info">
+                <span class="user-name">
+                    <strong>{{user}}</strong>
+                </span>
+                <span class="user-role">Administrator</span>
+                <span class="user-status">
+                    <i class="fa fa-circle"></i>
+                    <span>Online</span>
+                </span>
+            </div>
+        </div>
+
+        <ul class="category-items">
+
+            <li class="boton-d">
+                <a routerLink="/admin/perfil">Editar Perfil</a>
+
+            </li>
+
+
+
+            <hr>
+
+
+            <li class="boton-d">
+                <a routerLink="legajos">Legajos</a>
+            </li>
+
+            <li class="boton-d">
+                <a routerLink="invitaciones">Invitaciones</a>
+            </li>
+
+            <li class="boton-d">
+                <a routerLink="evaluaciones">Evaluaciones</a>
+            </li>
+
+            <li class="boton-d">
+                <a routerLink="categoria">Criterios de Evaluacion</a>
+            </li>
+            <li class="boton-d">
+                <a routerLink="categoria">Configuracion</a>
+            </li>
+<!--  docente, nomincas , legajos(Evento)-->
+
+
+        </ul>
+    </div>
+
+
+    <!-- noticie implemetacion a futuro --------------------------------------------
                  <div class="courses-sidebar-banner mt-30">
                         <a href="#">
                             <img src="https://live.hasthemes.com/html/13/edumate-preview/edumate/assets/images/banner.jpg" alt="">
@@ -67,7 +71,4 @@
                     </div>
 -->
 
-    </div>
-
-
-    
+</div>

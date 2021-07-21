@@ -59,13 +59,20 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                   </div>
                             </div>
+
+                            <div class="alert" *ngIf="emailalert">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    Email ya esta en uso!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                  </div>
+                            </div>
                             <div class="single-form">
                                 <button class="main-btn btn-block">Registrar</button>
                             </div>
                             
                             <div class="single-form">
                                 <label>Ya tienes una cuenta?</label>
-                                <a routerLink="/login/ingresar" class="main-btn main-btn-2 btn-block">Inicia Sesión</a>
+                                <a  class="main-btn main-btn-2 btn-block">Inicia Sesión</a>
                             </div>
                         </form>
 

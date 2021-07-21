@@ -738,7 +738,7 @@ p {
   margin-left: 45px;
 }
 .header-top-wrapper .header-top-right .header-link a:hover {
-  color: #fff;
+  color: #992e45;
 }
 .header-top-wrapper .header-top-right .header-link a.register::before {
   position: absolute;

@@ -10,6 +10,10 @@ import { EventosComponent } from './eventos/eventos.component';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { InvitacionesComponent } from './invitaciones/invitaciones.component';
 import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
+import { PageComponent } from './page/page.component';
+import { CategoriasComponent } from './categorias/categorias.component';
+import { DocenteComponent } from './docente/docente.component';
+import { NominaComponent } from './nomina/nomina.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
     EventosComponent,
     ArchivosComponent,
     InvitacionesComponent,
-    EvaluacionesComponent
+    EvaluacionesComponent,
+    PageComponent,
+    CategoriasComponent,
+    DocenteComponent,
+    NominaComponent
   ],
   imports: [
     CommonModule,

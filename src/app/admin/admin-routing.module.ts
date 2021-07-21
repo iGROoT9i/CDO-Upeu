@@ -7,6 +7,8 @@ import { EventosComponent } from './eventos/eventos.component';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { InvitacionesComponent } from './invitaciones/invitaciones.component';
 import { EvaluacionesComponent } from './evaluaciones/evaluaciones.component';
+import { PageComponent } from './page/page.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 const routes: Routes = [
   { path: '', component: AdminComponent ,
@@ -39,6 +41,16 @@ const routes: Routes = [
     {
       path: 'evaluaciones',
       component: EvaluacionesComponent,
+      
+    },
+    {
+      path: 'page',
+      component: PageComponent,
+      
+    },
+    {
+      path: 'categoria',
+      component: CategoriasComponent,
       
     },
     {

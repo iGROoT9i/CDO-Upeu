@@ -21,11 +21,27 @@ width: 20%;
 .boton-d{
     text-align: center;
 }
+
+.btn{
+    border:1px solid #992e45;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.479);
+    color: #992e45;
+}
+.btn:hover{
+    background: #992e45;
+    color: white;
+}
+
 .boton-d a{
     width: 100%;
     color: #992e45;
     padding: 10px 5px;
     border: 1px solid #992e45;
+}
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
 }
 .sidebar-title h4{
     color: #992e45;

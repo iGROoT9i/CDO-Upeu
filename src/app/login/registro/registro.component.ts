@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { UsuarioService } from '../../services/usuario.service';
 
 import { Router } from '@angular/router';
+import { Usuario } from '../../interface/usuario';
 
 @Component({
   selector: 'app-registro',
@@ -13,6 +14,7 @@ export class RegistroComponent implements OnInit {
 
   alert: boolean = false;
   alert2: boolean = false;
+  emailalert: boolean =false;
 
   ngOnInit(): void {}
   //JSON.stringify(data)
@@ -27,6 +29,11 @@ export class RegistroComponent implements OnInit {
     passwordc: HTMLInputElement
   ) {
 
+    this.alert2=false;
+    this.alert=false;
+    this.emailalert=false;
+
+    let user: Usuario[] = JSON.parse(localStorage.getItem("usuarios"));
     
     if(name.value=="" || lastname.value=="" || dni.value=="" || email.value== "" || password.value=="" || passwordc.value==""){
       this.alert2 = true;
@@ -34,13 +41,51 @@ export class RegistroComponent implements OnInit {
       if (passwordc.value != password.value) {
         this.alert = true;
       } else {
-        this.userService.login({
-          name: name.value,
-          lastname: lastname.value,
-          dni: dni.value,
-          email: email.value,
-          password: password.value,
+
+
+        if(user==null){
+
+          this.userService.login({  
+            name: name.value,
+            lastname: lastname.value,
+            dni: dni.value,
+            email: email.value,
+            password: password.value,
+          });
+
+
+          this.router.navigate(['/login/ingresar']);
+
+        }else{
+
+          user.forEach(element => {
+
+
+            console.log(element.email + " " + email.value);
+      
+            if(element.email != email.value ){
+  
+            
+  
+  
+            this.userService.login({  
+              name: name.value,
+              lastname: lastname.value,
+              dni: dni.value,
+              email: email.value,
+              password: password.value,
+            });
+  
+  
+            this.router.navigate(['/login/ingresar']);
+            
+          } else {
+            this.emailalert = true;
+          }
+  
+  
         });
+        }
   
         /** 
   
@@ -52,7 +97,7 @@ export class RegistroComponent implements OnInit {
         passwordc.value= '';
         */
   
-        return false;
+        
       }
     }
   }
